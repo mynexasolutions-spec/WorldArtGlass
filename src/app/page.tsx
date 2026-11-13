@@ -481,49 +481,49 @@ export default function WorldArtGlassPage() {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
-          <div className="bg-sky-50/70 border border-sky-100 rounded-3xl p-6 transition hover:shadow-md hover:border-sky-300">
+          <div className="bg-sky-50/70 border border-sky-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-sky-300">
             <div className="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-600 flex items-center justify-center mb-4">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <div className="text-xl font-bold text-slate-900 mb-1">100% Genuine</div>
-            <div className="text-xs font-semibold text-sky-600 mb-2">Saint-Gobain Toughened</div>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">100% Genuine</div>
+            <div className="text-sm sm:text-base font-bold text-sky-600 mb-2.5">Saint-Gobain Toughened</div>
+            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
               Every glass panel carries official laser-engraved certification stamps for guaranteed safety and high thermal shock resistance.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-3xl p-6 transition hover:shadow-md hover:border-[#7dd91a]">
+          <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-[#7dd91a]">
             <div className="w-12 h-12 rounded-2xl bg-[#7dd91a]/20 text-[#5ea313] flex items-center justify-center mb-4">
               <Zap className="w-6 h-6 text-[#5ea313]" />
             </div>
-            <div className="text-xl font-bold text-slate-900 mb-1">35% Faster</div>
-            <div className="text-xs font-semibold text-[#5ea313] mb-2">On-Time Execution</div>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">35% Faster</div>
+            <div className="text-sm sm:text-base font-bold text-[#5ea313] mb-2.5">On-Time Execution</div>
+            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
               With full in-house fabrication and local installation vans in Hyderabad, we finish your partitions days ahead of schedule.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-6 transition hover:shadow-md hover:border-blue-300">
+          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-blue-300">
             <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-4">
               <TrendingDown className="w-6 h-6" />
             </div>
-            <div className="text-xl font-bold text-slate-900 mb-1">15% Lower Cost</div>
-            <div className="text-xs font-semibold text-blue-600 mb-2">Factory Direct Rates</div>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">15% Lower Cost</div>
+            <div className="text-sm sm:text-base font-bold text-blue-600 mb-2.5">Factory Direct Rates</div>
+            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
               Transparent, competitive pricing directly from the supplier with no middleman agent commissions and full GST compliance.
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-indigo-50/70 border border-indigo-100 rounded-3xl p-6 transition hover:shadow-md hover:border-indigo-300">
+          <div className="bg-indigo-50/70 border border-indigo-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-indigo-300">
             <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center mb-4">
               <Award className="w-6 h-6" />
             </div>
-            <div className="text-xl font-bold text-slate-900 mb-1">99% Quality &amp; Safety</div>
-            <div className="text-xs font-semibold text-indigo-600 mb-2">Precision Installation</div>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">99% Quality &amp; Safety</div>
+            <div className="text-sm sm:text-base font-bold text-indigo-600 mb-2.5">Precision Installation</div>
+            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
               Accurate laser survey, CNC diamond-polished edges, and Dorma/Ozone architectural hardware ensuring zero rattling or sagging.
             </p>
           </div>
@@ -579,17 +579,17 @@ export default function WorldArtGlassPage() {
 
                   {/* Body Content */}
                   <div className="p-2.5 sm:p-5 flex flex-col flex-grow">
-                    <h3 className="text-xs sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-2 group-hover:text-sky-600 transition line-clamp-1">
+                    <h3 className="text-xs sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-1.5 group-hover:text-sky-600 transition line-clamp-1">
                       {service.title}
                     </h3>
-                    <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed mb-2.5 sm:mb-6 flex-grow line-clamp-2">
+                    <p className="text-[10px] sm:text-sm text-slate-600 leading-normal sm:leading-relaxed mb-2.5 sm:mb-4 flex-grow line-clamp-2">
                       {service.desc}
                     </p>
 
                     <div className="flex flex-col xs:flex-row items-stretch xs:items-center justify-between pt-2 sm:pt-3 border-t border-slate-100 gap-1.5 mt-auto">
                       <Link
                         href="/services#calculator"
-                        className="text-[10px] sm:text-xs font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left"
+                        className="text-[10px] sm:text-sm font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left"
                       >
                         Estimate Cost
                       </Link>
@@ -782,16 +782,16 @@ export default function WorldArtGlassPage() {
                   <h3 className="text-xs sm:text-base lg:text-lg font-bold text-white mb-0.5 sm:mb-1 group-hover:text-sky-400 transition line-clamp-1">
                     {project.title}
                   </h3>
-                  <p className="text-[10px] sm:text-xs text-slate-400 mb-2 sm:mb-3 line-clamp-1 sm:line-clamp-none">{project.subtitle}</p>
+                  <p className="text-[10px] sm:text-sm text-slate-400 mb-2 sm:mb-3 line-clamp-1 sm:line-clamp-none">{project.subtitle}</p>
 
                   <div className="mt-auto pt-2 sm:pt-3 border-t border-slate-800 flex flex-col xs:flex-row items-stretch xs:items-center justify-between gap-1">
-                    <span className="text-[9px] sm:text-[11px] text-slate-400 flex items-center gap-1 line-clamp-1">
-                      <MapPin className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-sky-400 shrink-0" /> {project.location}
+                    <span className="text-[9px] sm:text-xs text-slate-400 flex items-center gap-1 line-clamp-1">
+                      <MapPin className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-sky-400 shrink-0" /> {project.location}
                     </span>
                     <a
                       href={`https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20am%20interested%20in%20a%20project%20like%20${encodeURIComponent(project.title)}.`}
                       target="_blank"
-                      className="text-[10px] sm:text-xs font-semibold text-sky-400 hover:text-sky-300 transition text-right xs:text-left"
+                      className="text-[10px] sm:text-sm font-semibold text-sky-400 hover:text-sky-300 transition text-right xs:text-left"
                     >
                       Inquire Similar
                     </a>
@@ -895,24 +895,24 @@ export default function WorldArtGlassPage() {
               {[...reviewsList, ...reviewsList].map((review, i) => (
                 <div
                   key={i}
-                  className="w-[280px] sm:w-[340px] md:w-[380px] shrink-0 bg-white rounded-3xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all duration-300 flex flex-col justify-between"
+                  className="w-[300px] sm:w-[380px] md:w-[420px] shrink-0 bg-white rounded-3xl p-5 sm:p-7 border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-amber-300 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center gap-1 text-amber-400 mb-3">
+                    <div className="flex items-center gap-1.5 text-amber-400 mb-3.5">
                       {[...Array(5)].map((_, starIdx) => (
-                        <Star key={starIdx} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                        <Star key={starIdx} className="w-4 h-4 sm:w-5 sm:h-5 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
-                    <p className="text-xs text-slate-600 italic leading-relaxed mb-4">
+                    <p className="text-sm sm:text-base text-slate-700 italic leading-relaxed mb-5">
                       &ldquo;{review.text}&rdquo;
                     </p>
                   </div>
-                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between">
+                  <div className="pt-3.5 border-t border-slate-100 flex items-center justify-between">
                     <div>
-                      <div className="font-bold text-xs text-slate-900">{review.name}</div>
-                      <div className="text-[10px] text-slate-500">{review.role}</div>
+                      <div className="font-extrabold text-sm sm:text-base text-slate-900">{review.name}</div>
+                      <div className="text-xs text-slate-500 font-medium mt-0.5">{review.role}</div>
                     </div>
-                    <span className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${review.tagColor}`}>
+                    <span className={`text-xs font-bold px-3 py-1 rounded-full ${review.tagColor}`}>
                       {review.tag}
                     </span>
                   </div>
