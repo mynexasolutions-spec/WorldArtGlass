@@ -165,7 +165,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-2 bg-white border border-slate-200 p-1.5 rounded-2xl sm:rounded-full shadow-sm overflow-x-auto max-w-full">
               <button
                 onClick={() => setFilter("all")}
-                className={`text-xs font-semibold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
+                className={`text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
                   filter === "all" ? "bg-sky-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -173,7 +173,7 @@ export default function ProjectsPage() {
               </button>
               <button
                 onClick={() => setFilter("corporate")}
-                className={`text-xs font-semibold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
+                className={`text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
                   filter === "corporate" ? "bg-sky-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -181,7 +181,7 @@ export default function ProjectsPage() {
               </button>
               <button
                 onClick={() => setFilter("commercial")}
-                className={`text-xs font-semibold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
+                className={`text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
                   filter === "commercial" ? "bg-sky-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -189,7 +189,7 @@ export default function ProjectsPage() {
               </button>
               <button
                 onClick={() => setFilter("residential")}
-                className={`text-xs font-semibold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
+                className={`text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition whitespace-nowrap shrink-0 ${
                   filter === "residential" ? "bg-sky-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -214,23 +214,23 @@ export default function ProjectsPage() {
                     quality={95}
                     className={`object-cover ${project.id === "gachibowli-tech-park" ? "object-top" : "object-[center_35%]"} group-hover:scale-105 transition duration-500`}
                   />
-                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-950/80 backdrop-blur-md text-white text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/10 flex items-center gap-1">
-                    <MapPin className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-sky-400" /> <span className="line-clamp-1">{project.location}</span>
+                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-950/80 backdrop-blur-md text-white text-xs sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/10 flex items-center gap-1 shadow-sm">
+                    <MapPin className="w-3 h-3 text-sky-400 shrink-0" /> <span className="line-clamp-1">{project.location}</span>
                   </div>
-                  <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-[#7dd91a] text-white text-[9px] sm:text-[11px] font-bold px-2 sm:px-3 py-0.5 rounded-full shadow-md drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
+                  <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-[#7dd91a] text-white text-xs sm:text-xs font-bold px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full shadow-md drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]">
                     {project.area}
                   </div>
                 </div>
 
                 <div className="p-2.5 sm:p-6 flex flex-col flex-grow">
-                  <h3 className="text-sm sm:text-xl lg:text-2xl font-bold text-slate-900 mb-1 group-hover:text-sky-600 transition line-clamp-1">
+                  <h3 className="text-base sm:text-xl lg:text-2xl font-bold text-slate-900 mb-1 group-hover:text-sky-600 transition leading-snug line-clamp-2 min-h-[2.8rem] sm:min-h-0">
                     {project.title}
                   </h3>
                   <div className="text-xs sm:text-sm font-semibold text-slate-500 mb-2 sm:mb-3 line-clamp-1">
                     Client: {project.client}
                   </div>
 
-                  <p className="text-xs sm:text-sm text-slate-600 leading-normal sm:leading-relaxed mb-3 sm:mb-4 flex-grow line-clamp-2">
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium leading-normal sm:leading-relaxed mb-3 sm:mb-4 flex-grow line-clamp-3">
                     {project.desc}
                   </p>
 
