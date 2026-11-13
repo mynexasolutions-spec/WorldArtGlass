@@ -171,6 +171,36 @@ const servicesData = [
       "Integrated sensor-activated warm LED strip illumination",
       "Custom internal shelving, luxury organizers and drawers"
     ]
+  },
+  {
+    id: "glass-canopies-skylights",
+    title: "Glass Pergolas & Architectural Skylights",
+    tag: "Outdoor Luxury",
+    thickness: "12mm Laminated SGP",
+    category: "residential",
+    image: "/images/cat_glass_pergolas_skylights.jpg",
+    desc: "Heavy-duty laminated toughened glass pergolas, terrace canopies, and architectural skylights engineered for high wind resistance, UV protection, and leak-proof drainage.",
+    features: [
+      "12mm / 15mm Heat-strengthened Laminated SGP Toughened Glass",
+      "Heavy MS / Galvanized Steel framework with PU epoxy anti-rust coating",
+      "100% Leak-proof EPDM gaskets with structural silicone weather sealing",
+      "Blocks 99% harmful UV radiation while maximizing natural sunlight"
+    ]
+  },
+  {
+    id: "smart-privacy-glass",
+    title: "Smart Switchable Privacy Glass (PDLC)",
+    tag: "PDLC Smart Tech",
+    thickness: "10mm / 12mm PDLC",
+    category: "commercial",
+    image: "/images/cat_smart_privacy_glass.jpg",
+    desc: "Electrically switchable PDLC glass partitions that toggle from crystal clear to frosted privacy in milliseconds via remote, wall switch, or mobile automation.",
+    features: [
+      "Instant millisecond switching from transparent to frosted privacy",
+      "Ideal for IT boardrooms, director cabins, clinic suites & luxury villas",
+      "Compatible with smart home automation, RF remote & wall touch switches",
+      "Saint-Gobain Extra Clear Low-Iron laminated PDLC core film"
+    ]
   }
 ];
 
@@ -194,7 +224,9 @@ export default function ServicesPage() {
     toughened_glass: 160,
     stained_designer: 350,
     led_mirrors: 450,
-    acp_glazing: 480
+    acp_glazing: 480,
+    glass_pergolas: 550,
+    smart_glass: 950
   };
 
   const thicknessMultipliers: Record<string, number> = {
@@ -377,7 +409,10 @@ export default function ServicesPage() {
                           "acp-glazing": "acp_glazing",
                           "toughened-supply": "toughened_glass",
                           "stained-designer": "stained_designer",
-                          "led-mirrors": "led_mirrors"
+                          "led-mirrors": "led_mirrors",
+                          "custom-wardrobes": "slim_partition",
+                          "glass-canopies-skylights": "glass_pergolas",
+                          "smart-privacy-glass": "smart_glass"
                         };
                         if (serviceKeyMap[service.id]) {
                           setCalcService(serviceKeyMap[service.id]);
@@ -438,6 +473,8 @@ export default function ServicesPage() {
                     <option value="shower_cubicle">Shower Cubicles &amp; Bathroom Partitions</option>
                     <option value="glass_railing">Glass Railings (Balcony &amp; Staircase)</option>
                     <option value="sliding_doors">Frameless &amp; Sliding Glass Doors</option>
+                    <option value="glass_pergolas">Glass Pergolas &amp; Architectural Skylights</option>
+                    <option value="smart_glass">Smart Switchable Privacy Glass (PDLC)</option>
                     <option value="toughened_glass">Toughened Glass Supply (5mm - 12mm)</option>
                     <option value="stained_designer">Stained &amp; Designer Glass Panels</option>
                     <option value="led_mirrors">Custom Smart LED Mirrors</option>
