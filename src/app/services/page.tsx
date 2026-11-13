@@ -371,7 +371,7 @@ export default function ServicesPage() {
                 className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-sky-300 transition-all duration-300 flex flex-col group scroll-mt-32"
               >
                 {/* Image Header */}
-                <div className="relative h-28 xs:h-36 sm:h-56 w-full bg-slate-900 overflow-hidden">
+                <div className="relative h-32 xs:h-40 sm:h-56 w-full bg-slate-900 overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -379,24 +379,24 @@ export default function ServicesPage() {
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition duration-500"
                   />
-                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-900/80 backdrop-blur-md text-white text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/10">
+                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-900/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-white/10 shadow-sm">
                     {service.tag}
                   </div>
-                  <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-sky-600 text-white text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-2.5 py-0.5 rounded-md shadow-sm">
+                  <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-sky-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 rounded-md shadow-sm">
                     {service.thickness}
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-2.5 sm:p-6 flex flex-col flex-grow">
-                  <h3 className="text-xs sm:text-lg lg:text-xl font-bold text-slate-900 mb-1 sm:mb-2 group-hover:text-sky-600 transition line-clamp-1">
+                <div className="p-3 sm:p-6 flex flex-col flex-grow">
+                  <h3 className="text-sm sm:text-lg lg:text-xl font-bold text-slate-900 mb-1 sm:mb-2 group-hover:text-sky-600 transition leading-snug line-clamp-2 min-h-[2.5rem] sm:min-h-0">
                     {service.title}
                   </h3>
-                  <p className="text-[10px] sm:text-sm text-slate-600 leading-normal sm:leading-relaxed mb-2.5 sm:mb-4 flex-grow line-clamp-2">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3 sm:mb-4 flex-grow line-clamp-2 sm:line-clamp-3">
                     {service.desc}
                   </p>
 
-                  <div className="flex flex-col xs:flex-row items-stretch xs:items-center justify-between pt-2 sm:pt-3 border-t border-slate-100 mt-auto gap-1.5">
+                  <div className="flex flex-col xs:flex-row items-stretch xs:items-center justify-between pt-2.5 sm:pt-3 border-t border-slate-100 mt-auto gap-2">
                     <a
                       href="#calculator"
                       onClick={() => {
@@ -418,7 +418,7 @@ export default function ServicesPage() {
                           setCalcService(serviceKeyMap[service.id]);
                         }
                       }}
-                      className="text-[10px] sm:text-sm font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left"
+                      className="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left py-1 xs:py-0"
                     >
                       Estimate Cost
                     </a>
@@ -427,9 +427,9 @@ export default function ServicesPage() {
                       href={`https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20am%20interested%20in%20${encodeURIComponent(service.title)}.%20Please%20share%20quotation%20and%20schedule%20free%20laser%20site%20measurement.`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-1 text-[10px] sm:text-sm font-bold bg-[#7dd91a] hover:bg-[#71c917] text-white px-2 sm:px-4 py-1 sm:py-2 rounded-full transition shadow-md shadow-[#7dd91a]/25 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
+                      className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-sm font-bold bg-[#7dd91a] hover:bg-[#71c917] text-white px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full transition shadow-md shadow-[#7dd91a]/25 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
                     >
-                      <WhatsAppIcon className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> <span className="hidden xs:inline">Inquire on</span> WhatsApp
+                      <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" /> <span>WhatsApp</span>
                     </a>
                   </div>
                 </div>

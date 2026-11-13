@@ -108,46 +108,46 @@ export default function WhyUsPage() {
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
-            <div className="bg-sky-50/70 border border-sky-100 rounded-2xl sm:rounded-3xl p-3 sm:p-6 transition hover:shadow-md hover:border-sky-300">
+            <div className="bg-sky-50/70 border border-sky-100 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 transition hover:shadow-md hover:border-sky-300">
               <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-500/10 text-sky-600 flex items-center justify-center mb-2.5 sm:mb-4">
                 <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="text-sm sm:text-xl font-bold text-slate-900 mb-0.5 sm:mb-1">100% Genuine</div>
-              <div className="text-[10px] sm:text-xs font-semibold text-sky-600 mb-1 sm:mb-2">Saint-Gobain Toughened</div>
-              <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              <div className="text-xs font-semibold text-sky-600 mb-1.5 sm:mb-2">Saint-Gobain Toughened</div>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-3 sm:line-clamp-none">
                 Every single panel carries permanent laser-etched Saint-Gobain stamps for verified structural safety and high thermal shock resistance.
               </p>
             </div>
 
-            <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-2xl sm:rounded-3xl p-3 sm:p-6 transition hover:shadow-md hover:border-[#7dd91a]">
+            <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 transition hover:shadow-md hover:border-[#7dd91a]">
               <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-[#7dd91a]/20 text-[#5ea313] flex items-center justify-center mb-2.5 sm:mb-4">
                 <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-[#5ea313]" />
               </div>
               <div className="text-sm sm:text-xl font-bold text-slate-900 mb-0.5 sm:mb-1">35% Faster</div>
-              <div className="text-[10px] sm:text-xs font-semibold text-[#5ea313] mb-1 sm:mb-2">On-Time Execution</div>
-              <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              <div className="text-xs font-semibold text-[#5ea313] mb-1.5 sm:mb-2">On-Time Execution</div>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-3 sm:line-clamp-none">
                 With our own dedicated fabrication unit in Goshamahal and mobile installation teams, we deliver projects days ahead of schedule.
               </p>
             </div>
 
-            <div className="bg-blue-50/70 border border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-6 transition hover:shadow-md hover:border-blue-300">
+            <div className="bg-blue-50/70 border border-blue-100 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 transition hover:shadow-md hover:border-blue-300">
               <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-2.5 sm:mb-4">
                 <TrendingDown className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="text-sm sm:text-xl font-bold text-slate-900 mb-0.5 sm:mb-1">15% Lower Cost</div>
-              <div className="text-[10px] sm:text-xs font-semibold text-blue-600 mb-1 sm:mb-2">Direct Supplier Rates</div>
-              <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              <div className="text-xs font-semibold text-blue-600 mb-1.5 sm:mb-2">Direct Supplier Rates</div>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-3 sm:line-clamp-none">
                 Transparent wholesale pricing directly from the fabricator with zero broker commissions, hidden extras, or inflated rates.
               </p>
             </div>
 
-            <div className="bg-indigo-50/70 border border-indigo-100 rounded-2xl sm:rounded-3xl p-3 sm:p-6 transition hover:shadow-md hover:border-indigo-300">
+            <div className="bg-indigo-50/70 border border-indigo-100 rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 transition hover:shadow-md hover:border-indigo-300">
               <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center mb-2.5 sm:mb-4">
                 <Award className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="text-sm sm:text-xl font-bold text-slate-900 mb-0.5 sm:mb-1">99% Quality &amp; Safety</div>
-              <div className="text-[10px] sm:text-xs font-semibold text-indigo-600 mb-1 sm:mb-2">Precision Engineering</div>
-              <p className="text-[10px] sm:text-xs text-slate-600 leading-normal sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+              <div className="text-xs font-semibold text-indigo-600 mb-1.5 sm:mb-2">Precision Engineering</div>
+              <p className="text-xs text-slate-600 leading-relaxed line-clamp-3 sm:line-clamp-none">
                 Digital laser surveys, CNC diamond-polished edges, and Dorma/Ozone hardware ensuring zero rattling, sagging, or glass stress points.
               </p>
             </div>

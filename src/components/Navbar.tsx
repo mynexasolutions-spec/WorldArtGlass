@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 export function WhatsAppIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -34,12 +34,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/25 px-3 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto py-2.5 sm:py-3.5 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#17364b]/95 via-[#214863]/95 to-[#33617e]/90 backdrop-blur-xl border-b border-white/15 shadow-lg shadow-black/20 px-3 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-2.5 sm:py-3.5 flex items-center justify-between relative">
         
-        {/* Brand Logo - Official World Art Glass Registered Trademark Logo */}
+        {/* Left: Brand Logo */}
         <Link href="/" className="flex items-center group py-0.5 shrink-0">
-          <div className="relative h-9 sm:h-12 w-40 sm:w-56 transition transform group-hover:scale-105">
+          <div className="relative h-9 sm:h-11 w-40 sm:w-52 transition transform group-hover:scale-105">
             <Image 
               src="/images/world_art_glass_official_logo.png" 
               alt="World Art Glass Hyderabad" 
@@ -50,18 +50,18 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Clean Flat Navigation Menu */}
-        <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
+        {/* Center: Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => {
             const active = isActive(link.href);
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-semibold pb-1 transition-colors ${
+                className={`text-sm font-semibold transition-colors ${
                   active
-                    ? "text-[#7dd91a] border-b-2 border-[#7dd91a]"
-                    : "text-slate-200 hover:text-[#7dd91a] border-b-2 border-transparent hover:border-[#7dd91a]"
+                    ? "text-[#7dd91a] drop-shadow-sm font-bold"
+                    : "text-white/85 hover:text-white"
                 }`}
               >
                 {link.name}
@@ -70,20 +70,32 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Header Action Buttons */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5">
+        {/* Right Side: Phone Number Pill & WhatsApp */}
+        <div className="flex items-center gap-2 sm:gap-3">
+          {/* Outlined Phone Number Pill */}
+          <a
+            href="tel:+919985597294"
+            className="inline-flex items-center gap-1.5 sm:gap-2 border border-white/40 hover:border-white text-white font-semibold text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full transition hover:bg-white/10 shadow-sm"
+          >
+            <Phone className="w-3.5 h-3.5 text-sky-300 shrink-0" />
+            <span className="hidden xs:inline tracking-wide">+91 99855 97294</span>
+          </a>
+
+          {/* WhatsApp Direct Action Button */}
           <a
             href="https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20need%20a%20quotation%20for%20glass%20partition%20and%20interior%20solutions."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 sm:gap-1.5 bg-[#7dd91a] hover:bg-[#71c917] text-white font-bold text-[11px] sm:text-xs px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-md shadow-[#7dd91a]/25 transition transform hover:-translate-y-0.5 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
+            className="inline-flex items-center justify-center gap-1 sm:gap-1.5 bg-[#7dd91a] hover:bg-[#71c917] text-white font-bold text-xs px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-full shadow-md shadow-[#7dd91a]/25 transition transform hover:-translate-y-0.5 drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
+            title="Chat on WhatsApp"
           >
-            <WhatsAppIcon className="w-3.5 h-3.5" /> <span className="hidden xs:inline">WhatsApp</span>
+            <WhatsAppIcon className="w-3.5 h-3.5" /> <span className="hidden sm:inline">WhatsApp</span>
           </a>
 
+          {/* Mobile Menu Hamburger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-1.5 sm:p-2 text-slate-300 hover:text-white focus:outline-none rounded-lg"
+            className="lg:hidden p-1.5 sm:p-2 text-white/90 hover:text-white focus:outline-none rounded-lg"
             aria-label="Toggle navigation"
           >
             {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
@@ -93,7 +105,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-slate-950/95 backdrop-blur-xl border-b border-white/10 px-4 sm:px-6 py-4 flex flex-col gap-2 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden bg-[#17364b]/98 backdrop-blur-xl border-b border-white/15 px-4 sm:px-6 py-4 flex flex-col gap-2 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
           {navLinks.map((link) => {
             const active = isActive(link.href);
             return (
@@ -101,24 +113,30 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-sm font-medium py-2 px-3 rounded-xl transition-colors ${
+                className={`text-sm font-medium py-2.5 px-3 rounded-xl transition-colors ${
                   active
-                    ? "text-[#7dd91a] font-bold bg-[#7dd91a]/10 border-l-4 border-[#7dd91a]"
-                    : "text-slate-200 hover:text-white hover:bg-white/5"
+                    ? "text-[#7dd91a] font-bold bg-white/10 border-l-4 border-[#7dd91a]"
+                    : "text-white/90 hover:text-white hover:bg-white/5"
                 }`}
               >
                 {link.name}
               </Link>
             );
           })}
-          <div className="pt-2 border-t border-white/10 mt-1">
+          <div className="pt-3 border-t border-white/15 mt-1 space-y-2">
+            <a
+              href="tel:+919985597294"
+              className="w-full inline-flex items-center justify-center gap-2 border border-white/30 text-white font-bold text-xs py-2.5 rounded-xl hover:bg-white/10 transition"
+            >
+              <Phone className="w-4 h-4 text-sky-300" /> Call +91 99855 97294
+            </a>
             <a
               href="https://wa.me/919985597294"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-2 bg-[#7dd91a] text-white font-bold text-xs py-2.5 rounded-xl shadow-md"
             >
-              <WhatsAppIcon className="w-4 h-4" /> Chat on WhatsApp (+91 99855 97294)
+              <WhatsAppIcon className="w-4 h-4" /> Chat on WhatsApp
             </a>
           </div>
         </div>

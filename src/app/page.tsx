@@ -289,44 +289,46 @@ export default function WorldArtGlassPage() {
       {/* Persistent Static / Fixed Header Navigation Bar */}
       <Navbar />
 
-      {/* Hero Container with Full-Bleed Luxury Terrace Background */}
-      <section id="home" className="relative bg-slate-950 text-slate-900 overflow-hidden min-h-screen flex flex-col justify-center pt-24 sm:pt-28 pb-14 sm:pb-16 px-4 sm:px-6 lg:px-8">
-        {/* Architectural Glass Luxury Terrace Background Image */}
+      {/* Hero Container with Full-Bleed Architectural Glazing Profiles Background Matching Reference Style */}
+      <section id="home" className="relative bg-[#0262ac] text-white overflow-hidden min-h-[580px] sm:min-h-[640px] lg:min-h-[720px] flex flex-col justify-center pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8">
+        {/* Background Image Matching Reference Style */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero_luxury_terrace_v2.jpg"
-            alt="World Art Glass Modern Architectural Glass Elevation and Terrace Hyderabad"
+            src="/images/hero_glazing_profiles.jpg"
+            alt="World Art Glass Architectural Toughened Glass and Window Glazing Profiles Hyderabad"
             fill
             quality={95}
             priority
-            className="object-cover object-center"
+            className="object-cover object-right sm:object-right md:object-right lg:object-[center_right] xl:object-center"
           />
+          {/* Subtle gradient overlay on mobile & wide screens for optimal text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0262ac] via-[#0262ac]/90 sm:via-[#0262ac]/65 md:via-[#0262ac]/25 to-transparent pointer-events-none" />
         </div>
 
-        {/* Hero Section Content */}
+        {/* Hero Section Content (Left-Aligned, Clean Modern White Typography matching reference) */}
         <div className="relative z-10 max-w-7xl mx-auto w-full">
-          {/* Semi-Transparent Frosted Glass Architectural Panel */}
-          <div className="max-w-2xl bg-white/70 backdrop-blur-md border border-white/80 p-6 sm:p-8 lg:p-10 rounded-3xl shadow-2xl shadow-slate-900/10">
+          <div className="max-w-xl lg:max-w-2xl">
             {/* Pill Tag */}
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-sky-500/10 border border-sky-400/40 text-sky-800 px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-wide uppercase mb-3 sm:mb-4">
-              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sky-600" />
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/15 backdrop-blur-md border border-white/25 text-white px-3 sm:px-3.5 py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-wider uppercase mb-4 sm:mb-5 shadow-sm">
+              <Sparkles className="w-3.5 h-3.5 text-sky-200" />
               Toughened Saint-Gobain Glass Solutions • Hyderabad
             </div>
 
-            {/* Headline in bold black */}
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-950 leading-tight mb-3 sm:mb-4">
+            {/* Headline in Bold White (Uppercase matching reference image) */}
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white uppercase leading-[1.15] sm:leading-[1.12] mb-3.5 sm:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
               Making Every Space A Masterpiece
             </h1>
 
-            <p className="text-xs sm:text-base text-slate-700 font-medium leading-relaxed mb-5 sm:mb-6">
+            {/* Sub-paragraph */}
+            <p className="text-xs sm:text-base text-blue-50/90 font-normal leading-relaxed mb-6 sm:mb-8 max-w-lg drop-shadow-sm">
               We specialize in Toughened Saint-Gobain Glass solutions for IT Companies, Offices, Luxury Villas, Apartments, Showrooms &amp; Commercial Facades across Hyderabad.
             </p>
 
-            {/* Dual Pill Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 mb-5 sm:mb-6">
+            {/* Dual Action Buttons */}
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
               <a
                 href="#services"
-                className="inline-flex items-center justify-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-full shadow-lg shadow-sky-500/30 transition transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-full border border-white/40 transition shadow-md"
               >
                 <Layers className="w-4 h-4 text-white" /> Services
               </a>
@@ -334,82 +336,44 @@ export default function WorldArtGlassPage() {
               <a
                 href="https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20want%20to%20book%20a%20Free%20Site%20Measurement%20for%20my%20property%20in%20Hyderabad."
                 target="_blank"
-                className="inline-flex items-center justify-center gap-2 bg-[#7dd91a] hover:bg-[#71c917] text-white font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-full shadow-lg shadow-[#7dd91a]/40 transition transform hover:-translate-y-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
+                className="inline-flex items-center justify-center gap-2 bg-[#7dd91a] hover:bg-[#71c917] text-white font-bold text-xs sm:text-sm px-6 py-2.5 sm:py-3 rounded-full shadow-lg shadow-[#7dd91a]/30 transition transform hover:-translate-y-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
               >
                 <WhatsAppIcon className="w-4 h-4" /> WhatsApp Now
               </a>
+
+              {/* Trust Motto Pill */}
+              <div className="inline-flex items-center gap-2 sm:gap-3 bg-black/30 backdrop-blur-md border border-white/20 px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold text-white tracking-wider uppercase">
+                <span className="flex items-center gap-1 text-sky-200"><CheckCircle2 className="w-3 h-3 text-[#7dd91a]" /> Strong</span>
+                <span className="text-white/40">•</span>
+                <span className="flex items-center gap-1 text-sky-200"><CheckCircle2 className="w-3 h-3 text-[#7dd91a]" /> Stylish</span>
+                <span className="text-white/40">•</span>
+                <span className="flex items-center gap-1 text-sky-200"><CheckCircle2 className="w-3 h-3 text-[#7dd91a]" /> Trusted</span>
+              </div>
             </div>
 
-            {/* Trust Motto in Dark Pill with White Text */}
-            <div className="inline-flex flex-wrap items-center gap-2.5 sm:gap-4 bg-slate-950/85 backdrop-blur-md px-4 py-2 rounded-full text-[10px] sm:text-xs font-bold text-white tracking-wider uppercase shadow-md">
-              <span className="flex items-center gap-1 sm:gap-1.5 text-white"><CheckCircle2 className="w-3.5 h-3.5 text-sky-400" /> Strong</span>
-              <span className="text-white/40">•</span>
-              <span className="flex items-center gap-1 sm:gap-1.5 text-white"><CheckCircle2 className="w-3.5 h-3.5 text-sky-400" /> Stylish</span>
-              <span className="text-white/40">•</span>
-              <span className="flex items-center gap-1 sm:gap-1.5 text-white"><CheckCircle2 className="w-3.5 h-3.5 text-sky-400" /> Trusted</span>
+            {/* Bottom Hero Stats Row (Directly matching reference image 3!) */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-xl pt-6 border-t border-white/20">
+              <div>
+                <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight">15+ YRS</div>
+                <div className="text-[10px] sm:text-xs text-blue-100 font-medium mt-0.5">In Hyderabad</div>
+              </div>
+              <div>
+                <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight">1,500+</div>
+                <div className="text-[10px] sm:text-xs text-blue-100 font-medium mt-0.5">Projects Done</div>
+              </div>
+              <div>
+                <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight">4.9 ★</div>
+                <div className="text-[10px] sm:text-xs text-blue-100 font-medium mt-0.5">188+ Reviews</div>
+              </div>
+              <div>
+                <div className="text-xl sm:text-3xl font-extrabold text-white tracking-tight">100%</div>
+                <div className="text-[10px] sm:text-xs text-blue-100 font-medium mt-0.5">Saint-Gobain</div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
-
-      {/* Metrics Bar (Positioned below the hero section in the dedicated container area) */}
-      <div className="relative z-20 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 mt-4 sm:mt-8 mb-4 sm:mb-8 w-full flex justify-center">
-        <div className="w-full max-w-5xl bg-white rounded-2xl sm:rounded-3xl md:rounded-full shadow-xl shadow-slate-900/10 border border-slate-100 py-3.5 sm:py-5 px-3 sm:px-8 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-0 divide-y-0 md:divide-x divide-slate-100 text-center items-center">
-          
-          {/* Stat 1 */}
-          <div className="p-1 sm:p-2 md:p-0 md:px-4 flex flex-col items-center">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base lg:text-xl font-extrabold text-slate-900 tracking-tight">
-              <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-sky-50 border border-sky-200/80 text-sky-600 shrink-0">
-                <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 stroke-[2]" />
-              </span>
-              <span>NO.1 in Hyderabad</span>
-            </div>
-            <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">
-              Top Rated Glass Fabricator
-            </div>
-          </div>
-
-          {/* Stat 2 */}
-          <div className="p-1 sm:p-2 md:p-0 md:px-4 flex flex-col items-center">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base lg:text-xl font-extrabold text-slate-900 tracking-tight">
-              <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-sky-50 border border-sky-200/80 text-sky-600 shrink-0">
-                <Building2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 stroke-[2]" />
-              </span>
-              <span>1,500+ Projects</span>
-            </div>
-            <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">
-              Completed Installations
-            </div>
-          </div>
-
-          {/* Stat 3 */}
-          <div className="p-1 sm:p-2 md:p-0 md:px-4 flex flex-col items-center">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base lg:text-xl font-extrabold text-slate-900 tracking-tight">
-              <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-amber-50 border border-amber-200/90 text-amber-600 shrink-0">
-                <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-amber-400 text-amber-600 stroke-[1.5]" />
-              </span>
-              <span>4.9 Rating</span>
-            </div>
-            <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">
-              188+ Google Reviews
-            </div>
-          </div>
-
-          {/* Stat 4 */}
-          <div className="p-1 sm:p-2 md:p-0 md:px-4 flex flex-col items-center">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-base lg:text-xl font-extrabold text-slate-900 tracking-tight">
-              <span className="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-emerald-50 border border-emerald-200/80 text-[#7dd91a] shrink-0">
-                <ShieldCheck className="w-3 h-3 sm:w-3.5 sm:h-3.5 stroke-[2]" />
-              </span>
-              <span>100% Genuine</span>
-            </div>
-            <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">
-              Saint-Gobain Safety Glass
-            </div>
-          </div>
-
-        </div>
-      </div>
 
       {/* Spotlight Feature Section (Curved Light Sky-Blue Container Matching Reference Image) */}
       <section id="solutions" className="pt-4 sm:pt-6 pb-20 px-4 sm:px-6 lg:px-8">
@@ -481,49 +445,49 @@ export default function WorldArtGlassPage() {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Card 1 */}
-          <div className="bg-sky-50/70 border border-sky-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-sky-300">
+          <div className="bg-sky-50/70 border border-sky-100 rounded-3xl p-6 transition hover:shadow-md hover:border-sky-300">
             <div className="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-600 flex items-center justify-center mb-4">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">100% Genuine</div>
-            <div className="text-sm sm:text-base font-bold text-sky-600 mb-2.5">Saint-Gobain Toughened</div>
-            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+            <div className="text-xl font-bold text-slate-900 mb-1">100% Genuine</div>
+            <div className="text-xs font-semibold text-sky-600 mb-2">Saint-Gobain Toughened</div>
+            <p className="text-xs text-slate-600 leading-relaxed">
               Every glass panel carries official laser-engraved certification stamps for guaranteed safety and high thermal shock resistance.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-[#7dd91a]">
+          <div className="bg-[#7dd91a]/10 border border-[#7dd91a]/25 rounded-3xl p-6 transition hover:shadow-md hover:border-[#7dd91a]">
             <div className="w-12 h-12 rounded-2xl bg-[#7dd91a]/20 text-[#5ea313] flex items-center justify-center mb-4">
               <Zap className="w-6 h-6 text-[#5ea313]" />
             </div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">35% Faster</div>
-            <div className="text-sm sm:text-base font-bold text-[#5ea313] mb-2.5">On-Time Execution</div>
-            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+            <div className="text-xl font-bold text-slate-900 mb-1">35% Faster</div>
+            <div className="text-xs font-semibold text-[#5ea313] mb-2">On-Time Execution</div>
+            <p className="text-xs text-slate-600 leading-relaxed">
               With full in-house fabrication and local installation vans in Hyderabad, we finish your partitions days ahead of schedule.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-blue-300">
+          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-6 transition hover:shadow-md hover:border-blue-300">
             <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-600 flex items-center justify-center mb-4">
               <TrendingDown className="w-6 h-6" />
             </div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">15% Lower Cost</div>
-            <div className="text-sm sm:text-base font-bold text-blue-600 mb-2.5">Factory Direct Rates</div>
-            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+            <div className="text-xl font-bold text-slate-900 mb-1">15% Lower Cost</div>
+            <div className="text-xs font-semibold text-blue-600 mb-2">Factory Direct Rates</div>
+            <p className="text-xs text-slate-600 leading-relaxed">
               Transparent, competitive pricing directly from the supplier with no middleman agent commissions and full GST compliance.
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-indigo-50/70 border border-indigo-100 rounded-3xl p-6 sm:p-7 transition hover:shadow-md hover:border-indigo-300">
+          <div className="bg-indigo-50/70 border border-indigo-100 rounded-3xl p-6 transition hover:shadow-md hover:border-indigo-300">
             <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center mb-4">
               <Award className="w-6 h-6" />
             </div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-1.5">99% Quality &amp; Safety</div>
-            <div className="text-sm sm:text-base font-bold text-indigo-600 mb-2.5">Precision Installation</div>
-            <p className="text-sm sm:text-[15px] text-slate-600 leading-relaxed">
+            <div className="text-xl font-bold text-slate-900 mb-1">99% Quality &amp; Safety</div>
+            <div className="text-xs font-semibold text-indigo-600 mb-2">Precision Installation</div>
+            <p className="text-xs text-slate-600 leading-relaxed">
               Accurate laser survey, CNC diamond-polished edges, and Dorma/Ozone architectural hardware ensuring zero rattling or sagging.
             </p>
           </div>
@@ -561,7 +525,7 @@ export default function WorldArtGlassPage() {
                   }`}
                 >
                   {/* Image Header */}
-                  <div className="relative h-28 xs:h-36 sm:h-48 w-full bg-slate-900 overflow-hidden">
+                  <div className="relative h-32 xs:h-36 sm:h-48 w-full bg-slate-900 overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -569,36 +533,36 @@ export default function WorldArtGlassPage() {
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 25vw"
                       className="object-cover group-hover:scale-105 transition duration-500"
                     />
-                    <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-900/80 backdrop-blur-md text-white text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-white/10">
+                    <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-900/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-white/10 shadow-sm">
                       {service.tag}
                     </div>
-                    <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-sky-600 text-white text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-2.5 py-0.5 rounded-md shadow-sm">
+                    <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 bg-sky-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 rounded-md shadow-sm">
                       {service.thickness}
                     </div>
                   </div>
 
                   {/* Body Content */}
-                  <div className="p-2.5 sm:p-5 flex flex-col flex-grow">
-                    <h3 className="text-xs sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-1.5 group-hover:text-sky-600 transition line-clamp-1">
+                  <div className="p-3 sm:p-5 flex flex-col flex-grow">
+                    <h3 className="text-sm sm:text-base lg:text-lg font-bold text-slate-900 mb-1 sm:mb-1.5 group-hover:text-sky-600 transition leading-snug line-clamp-2 min-h-[2.5rem] sm:min-h-0">
                       {service.title}
                     </h3>
-                    <p className="text-[10px] sm:text-sm text-slate-600 leading-normal sm:leading-relaxed mb-2.5 sm:mb-4 flex-grow line-clamp-2">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-2.5 sm:mb-4 flex-grow line-clamp-2">
                       {service.desc}
                     </p>
 
-                    <div className="flex flex-col xs:flex-row items-stretch xs:items-center justify-between pt-2 sm:pt-3 border-t border-slate-100 gap-1.5 mt-auto">
+                    <div className="flex flex-col xs:flex-row items-stretch xs:items-center justify-between pt-2.5 sm:pt-3 border-t border-slate-100 gap-1.5 mt-auto">
                       <Link
                         href="/services#calculator"
-                        className="text-[10px] sm:text-sm font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left"
+                        className="text-xs sm:text-sm font-bold text-sky-600 hover:text-sky-800 transition text-center xs:text-left py-1 xs:py-0"
                       >
                         Estimate Cost
                       </Link>
                       <a
                         href={`https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20am%20interested%20in%20${encodeURIComponent(service.title)}.`}
                         target="_blank"
-                        className="inline-flex items-center justify-center gap-1 text-[10px] sm:text-xs font-bold bg-[#7dd91a] hover:bg-[#71c917] text-white px-2 sm:px-3 py-1 sm:py-1.5 rounded-full transition shadow-sm drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
+                        className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-xs font-bold bg-[#7dd91a] hover:bg-[#71c917] text-white px-2.5 sm:px-3 py-1.5 rounded-full transition shadow-sm drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)]"
                       >
-                        <WhatsAppIcon className="w-3 h-3 sm:w-3.5 sm:h-3.5" /> Inquire
+                        <WhatsAppIcon className="w-3.5 h-3.5 sm:w-3.5 sm:h-3.5" /> Inquire
                       </a>
                     </div>
                   </div>
@@ -773,25 +737,25 @@ export default function WorldArtGlassPage() {
                     quality={95}
                     className={`object-cover ${project.id === 3 ? "object-top" : "object-[center_35%]"} group-hover:scale-105 transition duration-500`}
                   />
-                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-950/80 backdrop-blur-md text-sky-300 text-[9px] sm:text-[11px] font-bold px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-sky-800/50">
+                  <div className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-slate-950/85 backdrop-blur-md text-sky-300 text-[10px] sm:text-xs font-semibold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-sky-800/50 shadow-sm">
                     {project.category}
                   </div>
                 </div>
 
-                <div className="p-2.5 sm:p-5 flex flex-col flex-grow">
-                  <h3 className="text-xs sm:text-base lg:text-lg font-bold text-white mb-0.5 sm:mb-1 group-hover:text-sky-400 transition line-clamp-1">
+                <div className="p-3 sm:p-5 flex flex-col flex-grow">
+                  <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white mb-0.5 sm:mb-1 group-hover:text-sky-400 transition leading-snug line-clamp-1">
                     {project.title}
                   </h3>
-                  <p className="text-[10px] sm:text-sm text-slate-400 mb-2 sm:mb-3 line-clamp-1 sm:line-clamp-none">{project.subtitle}</p>
+                  <p className="text-xs sm:text-sm text-slate-400 mb-2.5 sm:mb-3 line-clamp-1 sm:line-clamp-none">{project.subtitle}</p>
 
-                  <div className="mt-auto pt-2 sm:pt-3 border-t border-slate-800 flex flex-col xs:flex-row items-stretch xs:items-center justify-between gap-1">
-                    <span className="text-[9px] sm:text-xs text-slate-400 flex items-center gap-1 line-clamp-1">
-                      <MapPin className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-sky-400 shrink-0" /> {project.location}
+                  <div className="mt-auto pt-2.5 sm:pt-3 border-t border-slate-800 flex flex-col xs:flex-row items-stretch xs:items-center justify-between gap-1.5">
+                    <span className="text-xs sm:text-xs text-slate-400 flex items-center gap-1 line-clamp-1">
+                      <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-sky-400 shrink-0" /> {project.location}
                     </span>
                     <a
                       href={`https://wa.me/919985597294?text=Hi%20World%20Art%20Glass%2C%20I%20am%20interested%20in%20a%20project%20like%20${encodeURIComponent(project.title)}.`}
                       target="_blank"
-                      className="text-[10px] sm:text-sm font-semibold text-sky-400 hover:text-sky-300 transition text-right xs:text-left"
+                      className="text-xs sm:text-sm font-semibold text-sky-400 hover:text-sky-300 transition text-right xs:text-left"
                     >
                       Inquire Similar
                     </a>
